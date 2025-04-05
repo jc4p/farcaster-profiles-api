@@ -88,6 +88,44 @@ The server runs on http://0.0.0.0:5000/ and provides these endpoints:
 
 All responses are in JSON format.
 
+Example responses:
+
+```json
+# GET /fid/977233
+{
+  "Bio": "aspiring person",
+  "Display": "Kasra Rahjerdi",
+  "Fid": "977233",
+  "Location": "geo:34.05,-118.24",
+  "Pfp": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/075a54ce-b58e-4ff5-4009-f63b548f4600/rectcrop3",
+  "Twitter": null,
+  "Username": "jc4p"
+}
+
+# GET /location?lat=34.05&lon=-118.24 (first 2 results shown)
+[
+  {
+    "Bio": "Co-founder/CEO of Clutch- building your web3 toolkit. \nChatting web3 & crypto on TikTok @cryptobec_",
+    "Display": "Bec Jones ",
+    "Fid": "12347",
+    "Location": "geo:34.05,-118.24",
+    "Pfp": "https://i.imgur.com/ZWkMQeB.jpg",
+    "Twitter": null,
+    "Username": "becejones"
+  },
+  {
+    "Bio": "/higher",
+    "Display": "martin ↑",
+    "Fid": "1841",
+    "Location": "geo:34.05,-118.24",
+    "Pfp": "https://imagedelivery.net/BXluQx4ige9GuW0Ia56BHw/c6a22d4a-d754-469c-5921-0850afc3d200/original",
+    "Twitter": null,
+    "Username": "martin"
+  }
+  // ... more profiles
+]
+```
+
 ## Data Schema
 
 User profiles contain these fields:
